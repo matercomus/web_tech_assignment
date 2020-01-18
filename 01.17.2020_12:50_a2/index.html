@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Favorite Web Pages</title>
+        <link rel="stylesheet" href="Screen.css"/>
+        <link rel="stylesheet" media="print" href="Print.css"/>
+        <link rel="stylesheet" media="screen and (max-width: 400px)" href="Handheld.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="Script.js" defer></script>
+
+         <!-- <script>
+            // $(document).ready(function(){
+            // //   $("button").click(function(){
+            //     $.getJSON("http://wt.ops.labs.vu.nl/api20/43e753ca/", function(data){
+            //       $.each(data, function(i, field){
+            //     //     $("td").append(field + " ");
+            //         $( "#table1" )
+            //         .append( "Name: " + data[i].image )
+            //         .append( "Name: " + data[i].brand )
+            //         .append( "Name: " + data[i].model )
+            //         .append( "Name: " + data[i].os ) // John
+            //         .append( "Time: " + data[i].screensize );
+            //       });
+            //     });
+            // //   });
+            // });
+        </script> -->
+
+    </head>
+    <body>
+        <h1>Come and buy your new phone! </h1>
+        <div class ="a">
+            <h2>Your style</h2>
+        </div>
+        <h1>Important Section</h1>
+        <section id="prt4">
+            <div class = "b">
+                <h2>Smart-phone List</h2>
+                <p>Use the CSS border property to add a border to the table.</p>
+            </div>
+            <form action="https://wt.ops.labs.vu.nl/api20/43e753ca" method="post" target="_blank">
+            
+                <table id = "table1" class="tbls">
+                  <!-- JS takes this table  -->
+                </table>
+                <input type="submit">
+                
+            </form>
+            <form action="https://wt.ops.labs.vu.nl/api20/43e753ca/reset" method ="GET" target="_blank"> 
+                <input type="submit" value="Reset">
+            </form>
+            <button type="button" onclick="addRow()">Add Rows</button> 
+            <button>Get JSON data</button> <!--Works???-->
+        </section>
+        
+        <h1>Backup Table</h1>
+        <section id="prt5">
+            <div class = "c">
+                <h2>Second Table</h2>
+                <p>Use the CSS border property to add a border to the table.</p>
+            </div>
+            <table id = "table2" class="tbls1">
+                <caption>Personal Information Table 2</caption>
+                <tr>
+                    <th onclick="sortTable(table2, 0)">Firstname</th>
+                    <th onclick="sortTable(table2, 1)">Lastname</th> 
+                    <th onclick="sortTable(table2, 2)">Age</th>
+                </tr>
+                <tr>
+                    <td>Jilly</td>
+                    <td>Sam</td>
+                    <td>50</td>
+                </tr>
+                <tr>
+                    <td>Evy</td>
+                    <td>Jacks</td>
+                    <td>94</td>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>Doep</td>
+                    <td>80</td>
+                </tr>
+            </table>
+        </section>
+        
+        <h1>WWF</h1>
+        <section id="prt1">
+            <div class = "d">
+                <p>The <em>World Wide Fund</em> for Nature (WWF) is an <strong>international organization</strong> working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+            </div>
+            <h4>An Unordered List:</h4>
+            <ul class="a">
+                <li>Coffee</li>
+                <li>Tea</li>
+                <li>Milk</li>
+            </ul>
+        </section>
+        
+        <h1> WWF's Panda symbol</h1>
+        <section id="prt2">
+            <h2> Symbol Panda WWF's header 2</h2>
+            <div class = "e">
+                <p>The Panda has become the symbol of <abbr title="World Wide Fund">WWF</abbr>. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+                <pre>
+    Text in element
+    displayed in a fixed world
+    day, and night it preserves
+    both      spaces and time
+    no breaks, poem. 
+                </pre>
+            </div>
+            <h4>An Ordered List:</h4>
+            <ol class="c">
+                <li>Color</li>
+                <li>Screen size</li>
+                <li>Model</li>
+            </ol>
+            <h4>An Unordered List:</h4>
+            <ul class="b">
+                <li>Credit</li>
+                <li>Case</li>
+                <li>Screen</li>
+            </ul>
+            <h4>Description List:</h4>
+            <dl> <!--Defines a description list-->
+                <dt>Coffee</dt> <!--Defines terms/names-->
+                <dd>Black hot drink</dd> <!--describes each terms/names-->
+                <dt>Milk</dt>
+                <dd>White cold drink</dd>
+            </dl>
+        </section>
+
+        <h1>Owners</h1>
+        <section id="prt7">
+            <h2>Name: Mateusz Kedzia & Kevin Koeks</h2>
+            <nav>
+                <a href="https://www.amazon.com" target="_blank">Visit Our Partner Amazon!</a>
+                <a href="https://www.apple.com" target="_blank">Visit Our Partner Apple!</a>
+            </nav>
+        </section>
+        
+        <section id="prt8">
+            <h3>Report (Our experiences) testing HTML & CSS</h3>
+            <p>Browsers: Google Chrome & FireFox</p>
+            <p>Our experiences working with Chrome was much better compared to FireFox, because it doesn't change certain things on the layout.</p>
+            <p>In FireFox the submit button changed to 'submit Query' and another difference was that in FireFox the list-style was absence from the unordered list.</p>
+            <p>Print style: was tested by removing all element (display: none), and we added incrementally the important parts of the website and check the layout (ctrl+p).</p>
+            <p>Screen style: every time we made a change to the style we checked if the correct/ desired changes was made in the browsers.</p>
+            <p>Handheld style: was tested by using the developer-tools in the browsers, to adjust/check the page on different screen size.</p>
+        </section>
+
+    </body>
+</html>

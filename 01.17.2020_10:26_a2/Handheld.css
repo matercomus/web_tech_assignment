@@ -1,0 +1,106 @@
+@media screen and (max-width: 400px) {
+  div.a {
+    background-image: url("https://1.bp.blogspot.com/-j5XP7QubnAQ/XdhJ57N-f5I/AAAAAAAAAWM/WlvMiWKVXjsQZ3fgggK-TY_o6QD-7OvXgCLcBGAsYHQ/s1600/simple-high-res-wallpaper.png");
+    padding: 20px;
+    margin: 1px;
+    background-repeat: repeat-x;
+  }
+  
+  p {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  
+  h1, h2 {
+    margin: 5vw;
+  }
+  
+  h1 {
+    background-color: lightblue;
+  }
+  
+  pre {
+      font-weight: bold;
+      font-style: italic;
+      font-variant: normal;
+    }
+  
+  body {
+    background: rgb(138, 223, 223);
+    color: rgb(10, 0, 255);
+    font-family: "Times New Roman", Times, serif;
+  }
+  
+  h1, body {
+    border-style: solid;
+    border-width: 1vw;
+    border-color: rgb(92, 176, 224);
+  }
+  
+  table, th, td {
+    border: 1px solid black;
+    border-spacing: 1px;
+    word-wrap: break-word; /*allows long words to be able to be broken and wrap onto the next line*/
+  }
+  table {
+    width: 91vw;
+  }
+
+  table input {
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 12px;
+  }
+  
+  div, h1 {
+    text-align: center;
+  }
+  
+  h1 {
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: rgb(0,0,200);
+    font-size: 25px;
+  }
+  
+  p {
+    text-indent: 50px;
+    font: 15px arial, sans-serif;
+  }
+  
+  ul.a {
+    list-style-position: inside;
+    list-style-type: square;
+  } 
+  
+  ul.b {
+    list-style: inside;
+  }
+  
+  td img {
+      width: 10vw;
+  }
+  
+  a:link {
+    background-color: gold;
+    color: green;
+  }
+  
+  a:visited {
+    color: rgb(96, 191, 223);
+  }
+  
+  a:hover {
+    color: orange;
+  }
+  
+  a:active {
+    color: red;
+  }
+  
+  input:focus {
+    color: red;
+  }
+}
