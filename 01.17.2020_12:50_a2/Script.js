@@ -49,3 +49,38 @@ function generateTable(table, data) {
 // generateTableHead(table, data);
 
 });
+
+// SUBMIT BUTTON
+// jquery post to api with jason data inserted in the table
+
+// $(document).ready(function(){  
+//   $("#subButton").click(function(){  
+//       var x = $("#submitForm").serializeArray();  
+//       console.log(x);
+      
+//       // $.each(x, function(i, field){  
+//       //     $("#results").append(field.name + ":" + field.value + " "); 
+
+//   })
+// })
+
+// ---------------------------------------------------------------------------------
+$(document).ready(function(){  
+  $("#subButton").click(function(){
+    $.ajax({
+      url: "http://wt.ops.labs.vu.nl/api20/43e753ca/",
+      data: { image: "#imgField", model: "#modelField", brand: "#brandFiled", screensize: "#screensizeField", os: "#osField" },
+      type: "POST",
+      dataType: 'json',
+
+      success: function (e) {
+          //do what needs to be done if successful
+          // console.log("success"),
+      },
+      error: function (e) {
+          console.log(JSON.stringify(e)),
+          // console.log("error"),
+      }
+    });
+  })
+})

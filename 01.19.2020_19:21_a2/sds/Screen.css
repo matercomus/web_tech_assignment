@@ -46,7 +46,7 @@ table {
 }
 
 table input {
-  width: 95%;
+  width: 100%;
   word-wrap: break-word;
   font-size: 12px;
 }

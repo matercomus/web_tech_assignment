@@ -9,24 +9,8 @@
         <meta charset="UTF-8">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="Script.js" defer></script>
-
-         <!-- <script>
-            // $(document).ready(function(){
-            // //   $("button").click(function(){
-            //     $.getJSON("http://wt.ops.labs.vu.nl/api20/43e753ca/", function(data){
-            //       $.each(data, function(i, field){
-            //     //     $("td").append(field + " ");
-            //         $( "#table1" )
-            //         .append( "Name: " + data[i].image )
-            //         .append( "Name: " + data[i].brand )
-            //         .append( "Name: " + data[i].model )
-            //         .append( "Name: " + data[i].os ) // John
-            //         .append( "Time: " + data[i].screensize );
-            //       });
-            //     });
-            // //   });
-            // });
-        </script> -->
+        <!-- <script src="onlineJS.js" defer></script> -->
+        <!-- <script src="groupJS.js" defer></script> -->
 
     </head>
     <body>
@@ -42,27 +26,27 @@
             </div>
 
             <table id = "table1" class="tbls">
-            <!-- JS takes this table  -->
-                <form id="submitForm">
-                    <tr> <!-- here user inserts data to be send and saved in the database --> 
-                        <td><input id="imgField" type="text" placeholder="img URL"></td>
-                        <td><input id="brandField" type="text" placeholder="Brand"></td>
-                        <td><input id="modelField" type="text" placeholder="Model"></td>
-                        <td><input id="osField" type="text" placeholder="OS"></td>
-                        <td><input id="screensizeField" type="text" placeholder="Screen Size"></td>
-                    </tr>
-                </form>    
-            </table>
-
-            <!-- button action resolved by JS -->
-            <input id="subButton" type="button" value="Submit">
-
-            <form action="https://wt.ops.labs.vu.nl/api20/43e753ca/reset" method ="GET" target="_blank"> 
-                <input type="submit" value="Reset">
-            </form>
-            <button type="button" onclick="addRow()">Add Rows</button> 
-            <button>Get JSON data</button> <!--Works???-->
-        </section>
+                <!-- JS takes this table  -->
+                    <form id="submitForm">
+                        <tr> <!-- here user inserts data to be send and saved in the database --> 
+                            <td><input id="imgField" type="text" placeholder="img URL"></td>
+                            <td><input id="brandField" type="text" placeholder="Brand"></td>
+                            <td><input id="modelField" type="text" placeholder="Model"></td>
+                            <td><input id="osField" type="text" placeholder="OS"></td>
+                            <td><input id="screensizeField" type="text" placeholder="Screen Size"></td>
+                        </tr>
+                    </form>    
+                </table>
+    
+                <!-- button action resolved by JS -->
+                <input id="subButton" type="button" value="Submit">
+    
+                <form action="https://wt.ops.labs.vu.nl/api20/43e753ca/reset" method ="GET" target="_blank"> 
+                    <input type="submit" value="Reset">
+                </form>
+                <button type="button" onclick="addRow()">Add Rows</button> 
+                <button>Get JSON data</button> <!--Works???-->
+            </section>
         
         <h1>Backup Table</h1>
         <section id="prt5">

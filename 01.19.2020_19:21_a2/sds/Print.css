@@ -1,0 +1,32 @@
+@media print {
+  #prt1, #prt2, #prt7, #prt8, p, div.a, h1 {
+    display: none;
+  }
+  body {
+    color: black;
+    border-color: white;
+  }
+
+  table input {
+    width: 100%;
+    word-wrap: break-word; /*allows long words to be able to be broken and wrap onto the next line*/
+    font-size: 12px;
+  }
+
+  td img {
+    width: 10vw;
+  }
+
+  h1 {
+    page-break-before: avoid;
+  }
+  
+  #prt8 { /*Footer section*/
+    page-break-after: avoid;
+  }
+
+  h2 {
+    orphans: 2; /*the break space at the bottom part of page*/
+    widows: 3; /*the break space at the top part of page*/
+  }
+}
